@@ -4,7 +4,7 @@
 
 CoffinDiskMark is a TCAL-based benchmarking tool for decrypting `.k9a` files. It is designed to assess the decryption speed of large collections of `.k9a` files. The tool reports performance metrics such as total files decrypted, total data size, and decryption speed in MB/s.
 
-Based on LlamaToolkit.
+Based on LlamaToolkit, but is significantly faster.
 
 ## Features
 
@@ -36,7 +36,7 @@ Decrypts files or directories containing `.k9a` files.
 Runs a decryption benchmark for a specified number of seconds.
 
 ```
-CoffinDiskMark bench <seconds>
+./CoffinDiskMark bench <seconds>
 ```
 
 - `<seconds>`: Duration of the benchmark in seconds (default is 10 seconds).  
@@ -63,7 +63,7 @@ CoffinDiskMark bench <seconds>
 
 ## Notes
 
-- The tool assumes it is running in the game directory containing `game.exe` if no arguments are provided. It will automatically look for assets in `www/img`, `www/audio`, and `www/data`.
+- The tool assumes it is running in the game directory containing `game.exe`. It will automatically look for assets in `www/img`, `www/audio`, and `www/data`.
 - Native AOT binaries are provided for Windows and Linux.
 
 ## License
