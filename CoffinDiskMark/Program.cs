@@ -34,7 +34,7 @@ namespace CoffinDiskMark
                     Console.WriteLine("Modes: decrypt, bench");
                     Console.WriteLine("Decrypt: CoffinDiskMark decrypt <inputFileOrDir> <outputDir> (optional)");
                     Console.WriteLine("Bench: LlamaToolkit bench <seconds> (default: 10)");
-                    Console.WriteLine("CoffinDiskMark will assume it is inside of the game directory (containing game.exe).");
+                    Console.WriteLine("CoffinDiskMark will assume it is inside of the game directory that contains game.exe.");
                     break;
             }
             Console.WriteLine("All tasks finished.");
