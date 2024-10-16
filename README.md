@@ -1,5 +1,7 @@
 # CoffinDiskMark
 
+![hdd](/img/hdd.jpg)
+
 CoffinDiskMark is a TCAL-based benchmarking tool for decrypting and benchmarking encrypted `.k9a` files. It is designed to assess the decryption speed of large collections of `.k9a` files. The tool decrypts files using a custom decryption algorithm and reports performance metrics such as total files decrypted, total data size, and decryption speed in MB/s.
 
 Based on LlamaToolkit.
