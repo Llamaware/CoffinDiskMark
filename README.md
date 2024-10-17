@@ -20,9 +20,9 @@ Based on LlamaToolkit, but is significantly faster.
 
 ## Modes
 
-### Decrypt
+**Decrypt**
 
-Decrypts files or directories containing `.k9a` files.
+Decrypts `.k9a` files or directories containing `.k9a` files.
 
 ```
 ./CoffinDiskMark decrypt <inputFileOrDir> <outputDir>
@@ -31,7 +31,7 @@ Decrypts files or directories containing `.k9a` files.
 - `<outputDir>`: The directory where decrypted files will be saved.
 - Passing these arguments is optional.
 
-### Benchmark
+**Benchmark**
 
 Runs a decryption benchmark for a specified number of seconds.
 
@@ -65,6 +65,9 @@ Runs a decryption benchmark for a specified number of seconds.
 
 - The tool assumes it is running in the game directory containing `game.exe`. It will automatically look for assets in `www/img`, `www/audio`, and `www/data`.
 - Native AOT binaries are provided for Windows and Linux.
+- You may want to run the tool with `sudo chrt 99` to give it the highest priority, which increases benchmarking speed. (This may cause your system to hang while the benchmark is in progress.)
+- Depending on your system, the decryption speed may be limited by your CPU speed or your disk read/write speed. The tool cannot differentiate between these cases. Please keep this in mind.
+- You can use tools such as `atop` during the benchmark to determine the bottleneck.
 
 ## License
 
