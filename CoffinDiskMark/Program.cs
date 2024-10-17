@@ -33,8 +33,8 @@ namespace CoffinDiskMark
                     Console.WriteLine("Usage: CoffinDiskMark <mode> <arguments>");
                     Console.WriteLine("Modes: decrypt, bench");
                     Console.WriteLine("Decrypt: CoffinDiskMark decrypt <inputFileOrDir> <outputDir> (optional)");
-                    Console.WriteLine("Bench: LlamaToolkit bench <seconds> (default: 10)");
-                    Console.WriteLine("CoffinDiskMark will assume it is inside of the game directory that contains game.exe.");
+                    Console.WriteLine("Bench: CoffinDiskMark bench <seconds> (default: 10)");
+                    Console.WriteLine("CoffinDiskMark should be placed inside of the game directory that contains game.exe.");
                     break;
             }
             Console.WriteLine("All tasks finished.");
@@ -146,7 +146,7 @@ namespace CoffinDiskMark
             Console.WriteLine($"Total files decrypted: {totalFilesDecrypted}");
             Console.WriteLine($"Total size decrypted: {totalMBDecrypted:F2} MB");
             Console.WriteLine($"Decryption speed: {mbPerSecond:F2} MB/s");
-            Console.WriteLine($"Decryption time: {elapsedMs} ms");
+            Console.WriteLine($"Benchmark duration: {elapsedMs} ms");
         }
 
 
