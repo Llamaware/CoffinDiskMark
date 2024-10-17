@@ -31,7 +31,7 @@ Decrypts `.k9a` files or directories containing `.k9a` files.
 - `<outputDir>`: The directory where decrypted files will be saved.
 - Passing these arguments is optional.
 
-**Benchmark**
+**Bench**
 
 Runs a decryption benchmark for a specified number of seconds.
 
@@ -40,7 +40,7 @@ Runs a decryption benchmark for a specified number of seconds.
 ```
 
 - `<seconds>`: Duration of the benchmark in seconds (default is 10 seconds).  
-- This mode continuously decrypts files until the specified time limit is reached and provides a summary of the performance.
+- Continuously decrypts files until the specified time limit is reached and provides a summary of the performance.
 
 ## Examples
 
