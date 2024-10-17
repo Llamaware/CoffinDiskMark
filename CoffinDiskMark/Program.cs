@@ -29,7 +29,7 @@ namespace CoffinDiskMark
                     await RunBenchmark(args);
                     break;
                 default:
-                    Console.WriteLine("CoffinDiskMark: A TCAL-Based Benchmarking Program");
+                    Console.WriteLine("CoffinDiskMark: A TCAL-Based Benchmarking Tool");
                     Console.WriteLine("Usage: CoffinDiskMark <mode> <arguments>");
                     Console.WriteLine("Modes: decrypt, bench");
                     Console.WriteLine("Decrypt: CoffinDiskMark decrypt <inputFileOrDir> <outputDir> (optional)");
